@@ -30,12 +30,12 @@ export default async function LocaleLayout({
 }>) {
   const { locale } = await params
 
-  const messages = await getMessages()
+  const messages = await getMessages({ locale })
 
   return (
     <html lang={locale} className={`${geist.variable} ${geistMono.variable}`}>
       <body className="antialiased" suppressHydrationWarning>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
           <Analytics />
         </NextIntlClientProvider>
