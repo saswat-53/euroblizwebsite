@@ -11,7 +11,9 @@
   "hero": {
     "tagline": "Bringing Ideas to Life with Solutions That Engage, Connect, and Deliver Results",
     "subtitle": "Your Ideas, Our Expertise, For Future Tech",
-    "cta": "Book a FREE Consultation"
+    "cta": "Book a FREE Consultation",
+    "badge": "Digital Innovation Experts",
+    "learnMore": "Learn More"
   },
   "vision": {
     "title": "The Big Ideas",

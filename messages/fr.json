@@ -11,7 +11,9 @@
   "hero": {
     "tagline": "Amener les idées à la vie avec des solutions qui engagent, connectent et produisent des résultats",
     "subtitle": "Vos idées, notre expertise, pour la technologie du futur",
-    "cta": "Réservez une consultation GRATUITE"
+    "cta": "Réservez une consultation GRATUITE",
+    "badge": "Experts en Innovation Numérique",
+    "learnMore": "En Savoir Plus"
   },
   "vision": {
     "title": "Les grandes idées",

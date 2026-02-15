@@ -26,7 +26,7 @@ export function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary border border-primary rounded-full text-white text-sm font-semibold backdrop-blur-sm shadow-lg shadow-primary/30">
               <Sparkles className="w-4 h-4 text-white" />
-              <span>Digital Innovation Experts</span>
+              <span>{t("hero.badge")}</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-extrabold text-white leading-tight">
@@ -49,7 +49,7 @@ export function Hero() {
                 href="#services"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-bold rounded-xl border-2 border-white/20 transition-all hover:bg-white/20 hover:scale-105"
               >
-                Learn More
+                {t("hero.learnMore")}
               </a>
             </div>
 
