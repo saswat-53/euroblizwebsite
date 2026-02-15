@@ -20,7 +20,9 @@ const nextConfig = {
       },
     ],
   },
-  allowedDevOrigins: ['127.0.0.1', 'localhost']
+  allowedDevOrigins: ['127.0.0.1', 'localhost'],
+  // Ensure content folder is included in serverless functions
+  serverExternalPackages: ['@keystatic/core'],
 }
 
 export default withNextIntl(nextConfig)

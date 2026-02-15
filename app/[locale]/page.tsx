@@ -20,6 +20,7 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
 
   // Fetch testimonials from Keystatic
   const testimonialsData = await reader.collections.testimonials.all()
+  console.log('Testimonials fetched:', testimonialsData.length)
   const testimonials = testimonialsData.map((testimonial) => ({
     slug: testimonial.slug,
     name: testimonial.entry.name,
@@ -27,6 +28,7 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
     position: locale === 'en' ? testimonial.entry.position_en : testimonial.entry.position_fr,
     rating: testimonial.entry.rating,
   }))
+  console.log('Testimonials mapped:', testimonials)
 
   // Fetch blog posts from Keystatic
   const postsData = await reader.collections.posts.all()
