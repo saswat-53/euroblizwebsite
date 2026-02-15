@@ -1,0 +1,214 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "team": "Team",
+    "testimonials": "Testimonials",
+    "blog": "Blog",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Bringing Ideas to Life with Solutions That Engage, Connect, and Deliver Results",
+    "subtitle": "Your Ideas, Our Expertise, For Future Tech",
+    "cta": "Book a FREE Consultation"
+  },
+  "vision": {
+    "title": "The Big Ideas",
+    "description": "Innovation starts with people, and our team is ready to build the tech that pushes your business forward into the next era of the digital future."
+  },
+  "innovation": {
+    "title": "Digital Solutions",
+    "description": "The innovative minds, the best technology, together, we create digital solutions that are as intelligent and innovative as your business."
+  },
+  "partnership": {
+    "title": "Creative Solutions",
+    "description": "When you work with us, you're not just getting a tech solution. You're getting a partnership with some of the brightest minds in the industry."
+  },
+  "services": {
+    "title": "Our Services",
+    "web": {
+      "title": "Website Development",
+      "tagline": "Crafting fast, secure, and scalable digital platforms.",
+      "description": "Bring Your Brand to Life with a Website That Tells Your Unique Story"
+    },
+    "hybrid": {
+      "title": "Hybrid Application",
+      "tagline": "Seamless mobile apps for iOS and Android.",
+      "description": "Bridge the Gap Between Platforms with Hybrid App Solutions"
+    },
+    "cloud": {
+      "title": "Cloud Application",
+      "tagline": "Building scalable, elastic, and serverless apps.",
+      "description": "Revolutionize Your Operations with Cloud-First Applications"
+    },
+    "iot": {
+      "title": "Internet of Things",
+      "tagline": "Smart devices and connected ecosystem development.",
+      "description": "Connecting the World, One IoT Solution at a Time"
+    },
+    "seo": {
+      "title": "Search Engine Optimization",
+      "tagline": "Boosting organic visibility and search ranking.",
+      "description": "Boost Your Organic Visibility, Rank Higher, and Drive Targeted Traffic with Expert SEO"
+    },
+    "analytics": {
+      "title": "Analytics & BI",
+      "tagline": "Data-driven insights for smarter business decisions.",
+      "description": "Make Smarter Decisions with Powerful Analytics"
+    },
+    "embedded": {
+      "title": "Embedded Systems",
+      "tagline": "Tailored firmware and hardware integration solutions.",
+      "description": "Power Innovation with Tailored Embedded System Solutions"
+    },
+    "blockchain": {
+      "title": "Crypto & Blockchain",
+      "tagline": "Decentralized applications and smart contract solutions.",
+      "description": "Build Decentralized Solutions with Blockchain and Smart Contracts"
+    },
+    "ai": {
+      "title": "Generative AI",
+      "tagline": "Enhancing products with large language models (LLMs).",
+      "description": "Enhance Products and Experiences with Generative AI"
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "mayukh": "Mayukh Chakraborty",
+    "aditya": "Aditya Paturi",
+    "mayukh_role": "Founder & CEO",
+    "aditya_role": "Lead Developer",
+    "testimonial_quote": "Eurobliz delivered our entire platform ahead of schedule. The quality and communication were exceptional!",
+    "testimonial_client": "R. Paul, Local eCommerce Startup"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it - hear from businesses we've helped transform",
+    "testimonial1": {
+      "quote": "Eurobliz delivered our entire platform ahead of schedule. The quality and communication were exceptional! They truly understood our vision and brought it to life.",
+      "name": "Sarah Johnson",
+      "position": "CEO, TechStart Inc.",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop"
+    },
+    "testimonial2": {
+      "quote": "Working with Eurobliz was a game-changer for our business. Their expertise in cloud solutions helped us scale efficiently and reduce costs significantly.",
+      "name": "Michael Chen",
+      "position": "CTO, CloudScale Solutions",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=387&auto=format&fit=crop"
+    },
+    "testimonial3": {
+      "quote": "The team at Eurobliz went above and beyond. Their AI integration transformed how we serve our customers. Highly recommended!",
+      "name": "Emma Rodriguez",
+      "position": "Product Manager, InnovateCorp",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=387&auto=format&fit=crop"
+    }
+  },
+  "blog": {
+    "title": "Latest Insights",
+    "subtitle": "Stay updated with the latest trends and insights in technology",
+    "readMore": "Read More",
+    "viewAll": "View All Articles",
+    "post1": {
+      "title": "The Future of Web Development: Trends to Watch in 2025",
+      "excerpt": "Explore the cutting-edge technologies and methodologies shaping the future of web development, from AI-powered tools to advanced frameworks.",
+      "date": "Jan 15, 2025",
+      "readTime": "5 min read",
+      "content": "The landscape of web development is evolving at an unprecedented pace. As we move through 2025, several key trends are emerging that will define how we build digital experiences. Progressive Web Apps (PWAs) are becoming the standard, offering native-app-like experiences directly in browsers. WebAssembly is gaining traction, allowing developers to run high-performance applications on the web. AI-powered development tools are accelerating the coding process, with intelligent code completion and automated testing becoming mainstream. Edge computing is reducing latency and improving user experiences globally. Serverless architectures continue to simplify deployment and scaling. The rise of micro-frontends is changing how large-scale applications are architected, allowing teams to work independently on different parts of the UI. Accessibility is no longer an afterthought but a core requirement, with new standards and tools making it easier to build inclusive experiences. These trends represent not just technological advances, but a fundamental shift in how we approach web development—prioritizing performance, user experience, and developer productivity."
+    },
+    "post2": {
+      "title": "Cloud Computing: Why Your Business Needs to Make the Switch",
+      "excerpt": "Discover how cloud computing can transform your business operations, reduce costs, and provide scalability for future growth.",
+      "date": "Jan 10, 2025",
+      "readTime": "7 min read",
+      "content": "Cloud computing has transitioned from a competitive advantage to a business necessity. The benefits are compelling and measurable. Cost efficiency is often the first consideration—businesses can eliminate significant capital expenditures on hardware and infrastructure, paying only for what they use. Scalability allows companies to grow without the traditional constraints of physical infrastructure. You can scale up during peak demand and scale down during quieter periods. Security, once a concern, has evolved dramatically with cloud providers investing billions in advanced security measures that exceed what most organizations could implement independently. Disaster recovery and business continuity become straightforward with cloud-based backup and redundancy. Collaboration improves as teams can access data and applications from anywhere, supporting modern remote and hybrid work models. Innovation accelerates because cloud platforms provide access to cutting-edge technologies like AI, machine learning, and advanced analytics without requiring specialized infrastructure. The flexibility to experiment with new services and technologies without major commitments enables faster iteration and innovation. For businesses looking to remain competitive in an increasingly digital economy, cloud migration isn't just an option—it's essential."
+    },
+    "post3": {
+      "title": "Generative AI: Transforming Customer Experience",
+      "excerpt": "Learn how businesses are leveraging generative AI to create personalized experiences and drive innovation across industries.",
+      "date": "Jan 5, 2025",
+      "readTime": "6 min read",
+      "content": "Generative AI is revolutionizing how businesses interact with customers, creating experiences that are more personalized, efficient, and engaging than ever before. At the forefront of this transformation are large language models (LLMs) that can understand context, generate human-like responses, and assist with complex tasks. Customer service is being reimagined with AI chatbots that handle inquiries 24/7, providing instant, accurate responses while learning from each interaction. Content personalization has reached new heights—AI can generate tailored product recommendations, personalized email campaigns, and customized user interfaces based on individual preferences and behavior. In e-commerce, generative AI powers virtual shopping assistants that guide customers through their journey, answer questions about products, and even generate personalized style recommendations. Marketing teams are using AI to create compelling copy, design variations, and campaign ideas at scale. The technology is also enhancing product development, with AI analyzing customer feedback and generating insights that inform feature prioritization. Healthcare providers are using generative AI to improve patient communication and streamline administrative tasks. The key to success is finding the right balance—using AI to enhance human capabilities rather than replace them, ensuring that technology serves to create more meaningful, efficient customer relationships."
+    },
+    "post4": {
+      "title": "Cybersecurity Best Practices for Modern Businesses",
+      "excerpt": "Essential security strategies to protect your business from evolving cyber threats in the digital age.",
+      "date": "Dec 28, 2024",
+      "readTime": "8 min read",
+      "content": "In today's interconnected world, cybersecurity is not just an IT concern—it's a critical business imperative. The threat landscape is constantly evolving, with attackers becoming more sophisticated and persistent. A comprehensive security strategy begins with understanding that security is everyone's responsibility, not just the IT department. Multi-factor authentication (MFA) has become essential, adding an extra layer of protection beyond passwords. Regular security training for employees helps prevent social engineering attacks and phishing attempts, which remain the most common entry points for breaches. Network segmentation limits the potential damage of a breach by isolating critical systems. Regular software updates and patch management close known vulnerabilities before they can be exploited. Data encryption protects sensitive information both in transit and at rest. Implementing zero-trust architecture means verifying every access request, regardless of whether it comes from inside or outside the network. Regular security audits and penetration testing help identify vulnerabilities before attackers do. Incident response plans ensure your organization can respond quickly and effectively when breaches occur. Cloud security requires special attention, with proper configuration and monitoring of cloud resources. Backup strategies should include offline backups to protect against ransomware. As businesses become more digital, investing in cybersecurity isn't optional—it's essential for survival and trust."
+    },
+    "post5": {
+      "title": "Mobile App Development: Native vs Hybrid Solutions",
+      "excerpt": "Comparing development approaches to help you choose the right strategy for your mobile application.",
+      "date": "Dec 20, 2024",
+      "readTime": "6 min read",
+      "content": "Choosing between native and hybrid mobile app development is one of the most important decisions in your mobile strategy. Each approach has distinct advantages and trade-offs. Native development, building separate apps for iOS and Android using platform-specific languages, offers the best performance and access to all device features. Apps feel natural to users, following platform-specific design guidelines and behaviors. However, maintaining two separate codebases requires more resources and development time. Hybrid development using frameworks like React Native or Flutter allows you to write code once and deploy to both platforms. This approach significantly reduces development time and cost while maintaining near-native performance. Modern hybrid frameworks have matured considerably, offering excellent performance for most use cases. The choice depends on your specific requirements. If your app requires intensive graphics processing, complex animations, or deep integration with device hardware, native development might be necessary. For most business applications, content-driven apps, and MVPs, hybrid development offers an excellent balance of performance, cost, and time-to-market. Consider your team's expertise, budget constraints, timeline, and long-term maintenance plans. Many successful apps use hybrid development, proving that the technology is viable for production applications. The gap between native and hybrid performance continues to narrow as frameworks improve."
+    },
+    "post6": {
+      "title": "Blockchain Technology: Beyond Cryptocurrency",
+      "excerpt": "Exploring practical blockchain applications transforming industries from supply chain to healthcare.",
+      "date": "Dec 15, 2024",
+      "readTime": "7 min read",
+      "content": "While cryptocurrency brought blockchain into the spotlight, the technology's potential extends far beyond digital currencies. Blockchain's core features—decentralization, transparency, and immutability—solve real-world problems across industries. Supply chain management is being revolutionized, with blockchain providing end-to-end visibility and traceability. Companies can track products from manufacture to delivery, verifying authenticity and preventing counterfeits. In healthcare, blockchain secures patient records while giving patients control over their data, enabling seamless sharing between providers while maintaining privacy. Smart contracts automate business processes, executing agreements automatically when conditions are met, reducing administrative overhead and disputes. The real estate industry is exploring blockchain for property records and transactions, potentially streamlining a traditionally paper-heavy process. Digital identity management using blockchain could give individuals control over their personal information, sharing only what's necessary for each transaction. Voting systems built on blockchain could increase transparency and reduce fraud concerns. The technology is finding applications in intellectual property protection, allowing creators to establish provenance and ownership of digital assets. Energy sector applications include peer-to-peer energy trading and carbon credit tracking. While blockchain won't solve every problem, its unique properties make it valuable for scenarios requiring transparency, auditability, and decentralized trust. As the technology matures and implementation challenges are addressed, we'll see increasingly practical applications emerge."
+    }
+  },
+  "partners": {
+    "title": "Meet Our Partners",
+    "partner1": {
+      "name": "Trubits",
+      "description": "Open Source Linux, Distribution Systems, Open Source Internet of Things",
+      "image": "/trubits.png"
+    },
+    "partner2": {
+      "name": "Hi Labs",
+      "description": "Hybrid Application Development",
+      "image": "https://www.hi-labsolution.com/assets/images/logo.png"
+    },
+    "partner3": {
+      "name": "Eurobliz Developer Community",
+      "description": "Community of Developers in India, Sri Lanka, Afghanistan, Nepal, Bhutan, Myanmar",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=387&auto=format&fit=crop"
+    }
+  },
+  "contact": {
+    "title": "Have any projects in mind?",
+    "subtitle": "Let us know your ideas, and we'll get back to you shortly.",
+    "name": "Name",
+    "email": "Email Address",
+    "phone": "Phone Number (optional)",
+    "message": "Message",
+    "submit": "Submit",
+    "footer_title": "Let us know your ideas, and we'll get back to you shortly.",
+    "footer_name": "FIRST NAME",
+    "footer_email": "EMAIL",
+    "footer_phone": "PHONE NUMBER",
+    "footer_message": "MESSAGE",
+    "footer_submit": "SUBMIT",
+    "success_message": "Your message has been sent successfully.",
+    "error_message": "An error occurred while sending your message. Please try again later."
+  },
+  "footer": {
+    "title": "Eurobliz",
+    "tagline": "Digital Services for Businesses",
+    "quick_links": "Quick Links",
+    "contact_us": "Contact Us",
+    "phone": "Phone: (+33) 749 706 796",
+    "copyright": "© 2025 eurobliz. All rights reserved."
+  },
+  "keystatic": {
+    "login": {
+      "title": "Eurobliz CMS Login",
+      "subtitle": "Enter admin credentials to continue",
+      "username": "Username",
+      "usernamePlaceholder": "Enter your username",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "submit": "Login",
+      "submitting": "Logging in...",
+      "securityNotice": "This page is protected. Unauthorized access is prohibited.",
+      "errorDefault": "Login failed",
+      "errorGeneric": "An error occurred. Please try again."
+    },
+    "logout": "Logout"
+  }
+}

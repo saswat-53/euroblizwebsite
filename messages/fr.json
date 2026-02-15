@@ -1,0 +1,212 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "team": "Équipe",
+    "testimonials": "Témoignages",
+    "blog": "Blog",
+    "partners": "Partenaires",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Amener les idées à la vie avec des solutions qui engagent, connectent et produisent des résultats",
+    "subtitle": "Vos idées, notre expertise, pour la technologie du futur",
+    "cta": "Réservez une consultation GRATUITE"
+  },
+  "vision": {
+    "title": "Les grandes idées",
+    "description": "L'innovation commence par les gens, et notre équipe est prête à construire la technologie qui propulse votre entreprise dans la prochaine ère du futur numérique."
+  },
+  "innovation": {
+    "title": "Solutions Numériques",
+    "description": "Les esprits innovants, la meilleure technologie, ensemble, nous créons des solutions numériques aussi intelligentes et innovantes que votre entreprise."
+  },
+  "partnership": {
+    "title": "Solutions Créatives",
+    "description": "Lorsque vous travaillez avec nous, vous n'obtenez pas seulement une solution technologique. Vous obtenez un partenariat avec certains des esprits les plus brillants de l'industrie."
+  },
+  "services": {
+    "title": "Nos Services",
+    "web": {
+      "title": "Développement Web",
+      "tagline": "Création de plateformes numériques rapides, sécurisées et évolutives.",
+      "description": "Donnez vie à votre marque avec un site web qui raconte votre histoire unique"
+    },
+    "hybrid": {
+      "title": "Application Hybride",
+      "tagline": "Applications mobiles fluides pour iOS et Android.",
+      "description": "Combler l'écart entre les plates-formes avec des solutions d'application hybride"
+    },
+    "cloud": {
+      "title": "Application Cloud",
+      "tagline": "Conception d'applications évolutives et sans serveur.",
+      "description": "Révolutionnez vos opérations avec des applications cloud-first"
+    },
+    "iot": {
+      "title": "Internet des Objets",
+      "tagline": "Développement de dispositifs intelligents et d'écosystèmes connectés.",
+      "description": "Connecter le monde, une solution IoT à la fois"
+    },
+    "seo": {
+      "title": "Optimisation pour les moteurs de recherche",
+      "tagline": "Augmentation de la visibilité organique et du classement de recherche.",
+      "description": "Augmentez votre visibilité organique, classez-vous plus haut et générez du trafic ciblé"
+    },
+    "analytics": {
+      "title": "Analyse & BI",
+      "tagline": "Informations basées sur les données pour des décisions commerciales plus intelligentes.",
+      "description": "Prenez des décisions plus intelligentes avec une analyse puissante"
+    },
+    "embedded": {
+      "title": "Systèmes Embarqués",
+      "tagline": "Solutions de firmware et d'intégration matérielle sur mesure.",
+      "description": "Alimenter l'innovation avec des solutions de systèmes embarqués sur mesure"
+    },
+    "blockchain": {
+      "title": "Crypto & Blockchain",
+      "tagline": "Applications décentralisées et solutions de contrats intelligents.",
+      "description": "Construire des solutions décentralisées avec Blockchain et Contrats Intelligents"
+    },
+    "ai": {
+      "title": "IA Générative",
+      "tagline": "Amélioration des produits avec des modèles de langage avancés (LLMs).",
+      "description": "Améliorez les produits et les expériences avec l'IA générative"
+    }
+  },
+  "team": {
+    "title": "Notre Équipe",
+    "mayukh": "Mayukh Chakraborty",
+    "aditya": "Aditya Paturi",
+    "mayukh_role": "Fondateur & PDG",
+    "aditya_role": "Développeur Principal",
+    "testimonial_quote": "Eurobliz a livré toute notre plateforme en avance. La qualité et la communication étaient exceptionnelles !",
+    "testimonial_client": "R. Paul, Startup de commerce électronique locale"
+  },
+  "testimonials": {
+    "title": "Ce Que Nos Clients Disent",
+    "subtitle": "Ne nous croyez pas sur parole - écoutez les entreprises que nous avons aidées à transformer",
+    "testimonial1": {
+      "quote": "Eurobliz a livré toute notre plateforme en avance. La qualité et la communication étaient exceptionnelles ! Ils ont vraiment compris notre vision et l'ont concrétisée.",
+      "name": "Sarah Johnson",
+      "position": "PDG, TechStart Inc.",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop"
+    },
+    "testimonial2": {
+      "quote": "Travailler avec Eurobliz a changé la donne pour notre entreprise. Leur expertise en solutions cloud nous a aidés à évoluer efficacement et à réduire considérablement les coûts.",
+      "name": "Michael Chen",
+      "position": "CTO, CloudScale Solutions",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=387&auto=format&fit=crop"
+    },
+    "testimonial3": {
+      "quote": "L'équipe d'Eurobliz a dépassé toutes les attentes. Leur intégration d'IA a transformé la façon dont nous servons nos clients. Hautement recommandé !",
+      "name": "Emma Rodriguez",
+      "position": "Responsable Produit, InnovateCorp",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=387&auto=format&fit=crop"
+    }
+  },
+  "blog": {
+    "title": "Dernières Perspectives",
+    "subtitle": "Restez à jour avec les dernières tendances et perspectives en technologie",
+    "readMore": "Lire Plus",
+    "viewAll": "Voir Tous Les Articles",
+    "post1": {
+      "title": "L'Avenir du Développement Web : Tendances à Surveiller en 2025",
+      "excerpt": "Explorez les technologies et méthodologies de pointe qui façonnent l'avenir du développement web, des outils alimentés par l'IA aux frameworks avancés.",
+      "date": "15 janv. 2025",
+      "readTime": "5 min de lecture",
+      "content": "Le paysage du développement web évolue à un rythme sans précédent. Alors que nous progressons en 2025, plusieurs tendances clés émergent qui définiront comment nous construisons les expériences numériques. Les Progressive Web Apps (PWA) deviennent la norme, offrant des expériences similaires aux applications natives directement dans les navigateurs. WebAssembly gagne du terrain, permettant aux développeurs d'exécuter des applications haute performance sur le web. Les outils de développement alimentés par l'IA accélèrent le processus de codage, avec une complétion de code intelligente et des tests automatisés devenant courants. L'edge computing réduit la latence et améliore les expériences utilisateur à l'échelle mondiale. Les architectures serverless continuent de simplifier le déploiement et la mise à l'échelle."
+    },
+    "post2": {
+      "title": "Cloud Computing : Pourquoi Votre Entreprise Doit Faire Le Changement",
+      "excerpt": "Découvrez comment le cloud computing peut transformer vos opérations commerciales, réduire les coûts et offrir une évolutivité pour la croissance future.",
+      "date": "10 janv. 2025",
+      "readTime": "7 min de lecture",
+      "content": "Le cloud computing est passé d'un avantage concurrentiel à une nécessité commerciale. Les avantages sont convaincants et mesurables. L'efficacité des coûts est souvent la première considération. Les entreprises peuvent éliminer des dépenses en capital importantes pour le matériel et l'infrastructure, ne payant que ce qu'elles utilisent. L'évolutivité permet aux entreprises de croître sans les contraintes traditionnelles de l'infrastructure physique. La sécurité a considérablement évolué avec les fournisseurs cloud investissant des milliards dans des mesures de sécurité avancées. La collaboration s'améliore car les équipes peuvent accéder aux données et applications de n'importe où."
+    },
+    "post3": {
+      "title": "IA Générative : Transformer L'Expérience Client",
+      "excerpt": "Découvrez comment les entreprises exploitent l'IA générative pour créer des expériences personnalisées et stimuler l'innovation dans tous les secteurs.",
+      "date": "5 janv. 2025",
+      "readTime": "6 min de lecture",
+      "content": "L'IA générative révolutionne la façon dont les entreprises interagissent avec les clients, créant des expériences plus personnalisées, efficaces et engageantes que jamais. À l'avant-garde de cette transformation se trouvent les grands modèles de langage qui peuvent comprendre le contexte et générer des réponses semblables à celles des humains. Le service client est réinventé avec des chatbots IA qui traitent les demandes 24/7. La personnalisation du contenu a atteint de nouveaux sommets. Dans le commerce électronique, l'IA générative alimente des assistants d'achat virtuels qui guident les clients tout au long de leur parcours."
+    },
+    "post4": {
+      "title": "Meilleures Pratiques de Cybersécurité pour les Entreprises Modernes",
+      "excerpt": "Stratégies de sécurité essentielles pour protéger votre entreprise contre les menaces cyber évolutives à l'ère numérique.",
+      "date": "28 déc. 2024",
+      "readTime": "8 min de lecture",
+      "content": "Dans le monde interconnecté d'aujourd'hui, la cybersécurité est un impératif commercial critique. Le paysage des menaces évolue constamment, avec des attaquants devenant plus sophistiqués. Une stratégie de sécurité complète commence par comprendre que la sécurité est la responsabilité de tous. L'authentification multi-facteurs est devenue essentielle. Une formation régulière en sécurité pour les employés aide à prévenir les attaques d'ingénierie sociale. La segmentation du réseau limite les dommages potentiels d'une violation. Les mises à jour logicielles régulières ferment les vulnérabilités connues avant qu'elles ne puissent être exploitées."
+    },
+    "post5": {
+      "title": "Développement d'Applications Mobiles : Solutions Natives vs Hybrides",
+      "excerpt": "Comparaison des approches de développement pour vous aider à choisir la bonne stratégie pour votre application mobile.",
+      "date": "20 déc. 2024",
+      "readTime": "6 min de lecture",
+      "content": "Choisir entre le développement d'applications mobiles natives et hybrides est une décision importante dans votre stratégie mobile. Le développement natif offre les meilleures performances et l'accès à toutes les fonctionnalités de l'appareil. Les applications se sentent naturelles pour les utilisateurs. Cependant, maintenir deux bases de code séparées nécessite plus de ressources. Le développement hybride utilisant des frameworks comme React Native ou Flutter permet d'écrire du code une fois et de le déployer sur les deux plateformes. Cette approche réduit considérablement le temps et le coût de développement."
+    },
+    "post6": {
+      "title": "Technologie Blockchain : Au-delà de la Cryptomonnaie",
+      "excerpt": "Explorer les applications pratiques de la blockchain transformant les industries de la chaîne d'approvisionnement aux soins de santé.",
+      "date": "15 déc. 2024",
+      "readTime": "7 min de lecture",
+      "content": "Bien que la cryptomonnaie ait mis la blockchain sous les projecteurs, le potentiel de la technologie s'étend bien au-delà des monnaies numériques. Les caractéristiques fondamentales de la blockchain résolvent des problèmes réels dans tous les secteurs. La gestion de la chaîne d'approvisionnement est révolutionnée, la blockchain fournissant une visibilité de bout en bout. Les entreprises peuvent suivre les produits de la fabrication à la livraison. Dans le secteur de la santé, la blockchain sécurise les dossiers des patients. Les contrats intelligents automatisent les processus commerciaux. L'industrie immobilière explore la blockchain pour les registres de propriété et les transactions."
+    }
+  },
+  "partners": {
+    "title": "Rencontrez nos partenaires",
+    "partner1": {
+      "name": "Trubits",
+      "description": "Linux Open Source, Systèmes de Distribution, Internet des Objets Open Source",
+      "image": "/trubits.png"
+    },
+    "partner2": {
+      "name": "Hi Labs",
+      "description": "Développement d'Applications Hybrides",
+      "image": "https://www.hi-labsolution.com/assets/images/logo.png"
+    },
+    "partner3": {
+      "name": "Eurobliz Developer Community",
+      "description": "Communauté de Développeurs en Inde, Sri Lanka, Afghanistan, Népal, Bhoutan, Myanmar",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=387&auto=format&fit=crop"
+    }
+  },
+  "contact": {
+    "title": "Avez-vous des projets en tête?",
+    "subtitle": "Faites-nous connaître vos idées et nous vous recontacterons rapidement.",
+    "name": "Nom",
+    "email": "Adresse e-mail",
+    "phone": "Numéro de téléphone (optionnel)",
+    "message": "Message",
+    "submit": "Soumettre",
+    "footer_title": "Faites-nous connaître vos idées et nous vous recontacterons rapidement.",
+    "footer_name": "PRÉNOM",
+    "footer_email": "E-MAIL",
+    "footer_phone": "NUMÉRO DE TÉLÉPHONE",
+    "footer_message": "MESSAGE",
+    "footer_submit": "SOUMETTRE"
+  },
+  "footer": {
+    "title": "Eurobliz",
+    "tagline": "Services Numériques pour les Entreprises",
+    "quick_links": "Liens Rapides",
+    "contact_us": "Nous Contacter",
+    "phone": "Téléphone: (+33) 749 706 796",
+    "copyright": "© 2025 eurobliz. Tous droits réservés."
+  },
+  "keystatic": {
+    "login": {
+      "title": "Connexion CMS Eurobliz",
+      "subtitle": "Entrez vos identifiants administrateur pour continuer",
+      "username": "Nom d'utilisateur",
+      "usernamePlaceholder": "Entrez votre nom d'utilisateur",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "Entrez votre mot de passe",
+      "submit": "Connexion",
+      "submitting": "Connexion en cours...",
+      "securityNotice": "Cette page est protégée. Tout accès non autorisé est interdit.",
+      "errorDefault": "Échec de la connexion",
+      "errorGeneric": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "logout": "Déconnexion"
+  }
+}

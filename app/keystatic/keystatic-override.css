@@ -1,0 +1,32 @@
+/* Remove the starry background for Keystatic pages */
+body::before {
+  display: none !important;
+}
+
+/* Set simple gray background to match Keystatic sidebar */
+body {
+  background: #2d2d2d !important;
+  background-image: none !important;
+}
+
+/* Light mode - match sidebar light gray */
+@media (prefers-color-scheme: light) {
+  body {
+    background: #f5f5f5 !important;
+  }
+}
+
+/* Center the main content area */
+[data-keystatic-theme] main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* Ensure content has proper max width and centering */
+[data-keystatic-theme] main > div {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
