@@ -15,9 +15,8 @@ export async function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'fr' }]
 }
 
-// Force static generation
+// Force static generation (no revalidate = fully static, no serverless functions)
 export const dynamic = 'force-static'
-export const revalidate = 60 // Revalidate every 60 seconds
 
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params

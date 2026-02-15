@@ -23,6 +23,12 @@ const nextConfig = {
   allowedDevOrigins: ['127.0.0.1', 'localhost'],
   // Ensure content folder is included in serverless functions
   serverExternalPackages: ['@keystatic/core'],
+  // Include content folder in output file tracing for Vercel
+  experimental: {
+    outputFileTracingIncludes: {
+      '/[locale]': ['./content/**/*'],
+    },
+  },
 }
 
 export default withNextIntl(nextConfig)
