@@ -2,7 +2,6 @@ import { Navigation } from "@/components/navigation"
 import { Hero } from "@/components/hero"
 import { IdeasSection } from "@/components/ideas-section"
 import { ServicesSection } from "@/components/services-section"
-import { TeamSection } from "@/components/team-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { BlogSection } from "@/components/blog-section"
 import { PartnersSection } from "@/components/partners-section"
@@ -25,7 +24,14 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
   const locale = params.locale
 
   // Create reader to fetch content from filesystem
-  const reader = createReader(process.cwd(), readerConfig)
+  const cwd = process.cwd()
+  console.log('Current working directory:', cwd)
+  console.log('Content directory exists:', require('fs').existsSync(`${cwd}/content`))
+  if (require('fs').existsSync(`${cwd}/content`)) {
+    console.log('Content directory contents:', require('fs').readdirSync(`${cwd}/content`))
+  }
+
+  const reader = createReader(cwd, readerConfig)
 
   // Fetch testimonials from Keystatic
   const testimonialsData = await reader.collections.testimonials.all()
