@@ -22,19 +22,10 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
   const params = await props.params
   const locale = params.locale
 
-  // Create reader to fetch content from filesystem
-  const cwd = process.cwd()
-  console.log('Current working directory:', cwd)
-  console.log('Content directory exists:', require('fs').existsSync(`${cwd}/content`))
-  if (require('fs').existsSync(`${cwd}/content`)) {
-    console.log('Content directory contents:', require('fs').readdirSync(`${cwd}/content`))
-  }
-
-  const reader = createReader(cwd, readerConfig)
+  const reader = createReader(process.cwd(), readerConfig)
 
   // Fetch testimonials from Keystatic
   const testimonialsData = await reader.collections.testimonials.all()
-  console.log('Testimonials fetched:', testimonialsData.length)
   const testimonials = testimonialsData.map((testimonial) => ({
     slug: testimonial.slug,
     name: testimonial.entry.name,
@@ -42,7 +33,6 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
     position: locale === 'en' ? testimonial.entry.position_en : testimonial.entry.position_fr,
     rating: testimonial.entry.rating,
   }))
-  console.log('Testimonials mapped:', testimonials)
 
   // Fetch blog posts from Keystatic
   const postsData = await reader.collections.posts.all()
