@@ -11,6 +11,15 @@ import { Footer } from "@/components/footer"
 import { createReader } from '@keystatic/core/reader'
 import readerConfig from '@/keystatic.config.reader'
 
+// Generate static pages for all locales at build time
+export async function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'fr' }]
+}
+
+// Force static generation
+export const dynamic = 'force-static'
+export const revalidate = 60 // Revalidate every 60 seconds
+
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params
   const locale = params.locale
