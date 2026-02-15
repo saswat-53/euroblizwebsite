@@ -14,6 +14,8 @@ import readerConfig from '@/keystatic.config.reader'
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params
   const locale = params.locale
+
+  // Create reader to fetch content from filesystem
   const reader = createReader(process.cwd(), readerConfig)
 
   // Fetch testimonials from Keystatic
