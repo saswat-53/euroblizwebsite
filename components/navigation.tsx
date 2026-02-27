@@ -10,11 +10,21 @@ export function Navigation() {
   const t = useTranslations()
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleSmoothScroll = (href: string) => (e: React.MouseEvent) => {
+    if (href.startsWith("#")) {
+      e.preventDefault()
+      const el = document.querySelector(href)
+      if (el) el.scrollIntoView({ behavior: "smooth" })
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
+
   return (
     <nav className="fixed top-0 w-full z-50 bg-primary shadow-lg md:opacity-90 opacity-100 rounded-b-2xl md:rounded-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2" onClick={handleSmoothScroll("/")}>
             <Image src="/logo-trial-1.png" alt="Eurobliz Logo" width={40} height={40} className="rounded-full" />
             <span className="text-2xl font-bold bg-linear-to-r bg-secondary bg-clip-text text-transparent">
              Eurobl<span className="text-red-600">i</span>z
@@ -22,25 +32,25 @@ export function Navigation() {
           </Link>
 
           <div className="hidden md:flex  items-center gap-8 text-white">
-            <Link href="/" className="text-md font-medium text-gray-300 hover:text-white transition-colors">
+            <Link href="/" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("/")}>
               {t("nav.home")}
             </Link>
-            <Link href="#services" className="text-md font-medium text-gray-300 hover:text-white transition-colors">
+            <Link href="#services" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#services")}>
               {t("nav.services")}
             </Link>
             {/* <Link href="#team" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
               {t("nav.team")}
             </Link> */}
-            <Link href="#testimonials" className="text-md font-medium text-gray-300 hover:text-white transition-colors">
+            <Link href="#testimonials" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#testimonials")}>
               {t("nav.testimonials")}
             </Link>
-            <Link href="#blog" className="text-md font-medium text-gray-300 hover:text-white transition-colors">
+            <Link href="#blog" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#blog")}>
               {t("nav.blog")}
             </Link>
-            <Link href="#partners" className="text-md font-medium text-gray-300 hover:text-white transition-colors">
+            <Link href="#partners" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#partners")}>
               {t("nav.partners")}
             </Link>
-            <Link href="#contact" className="text-md font-medium text-gray-300 hover:text-white transition-colors">
+            <Link href="#contact" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#contact")}>
               {t("nav.contact")}
             </Link>
             <LanguageSwitcher />
@@ -58,12 +68,14 @@ export function Navigation() {
             <Link
               href="/"
               className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              onClick={handleSmoothScroll("/")}
             >
               {t("nav.home")}
             </Link>
             <Link
               href="#services"
               className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              onClick={handleSmoothScroll("#services")}
             >
               {t("nav.services")}
             </Link>
@@ -76,24 +88,28 @@ export function Navigation() {
             <Link
               href="#testimonials"
               className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              onClick={handleSmoothScroll("#testimonials")}
             >
               {t("nav.testimonials")}
             </Link>
             <Link
               href="#blog"
               className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              onClick={handleSmoothScroll("#blog")}
             >
               {t("nav.blog")}
             </Link>
             <Link
               href="#partners"
               className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              onClick={handleSmoothScroll("#partners")}
             >
               {t("nav.partners")}
             </Link>
             <Link
               href="#contact"
               className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              onClick={handleSmoothScroll("#contact")}
             >
               {t("nav.contact")}
             </Link>
