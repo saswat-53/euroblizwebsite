@@ -3,16 +3,14 @@ body::before {
   display: none !important;
 }
 
-/* Set simple gray background to match Keystatic sidebar */
+/* Default dark background to match Keystatic sidebar */
 body {
   background: #2d2d2d !important;
   background-image: none !important;
 }
 
-/* Light mode - respond to Keystatic's own theme toggle */
-[data-keystatic-theme="light"] body,
-html[data-keystatic-theme="light"],
-body[data-keystatic-theme="light"] {
+/* Light mode - Keystatic adds .kui-scheme--light to <html> via its theme toggle */
+html.kui-scheme--light body {
   background: #f5f5f5 !important;
 }
 
