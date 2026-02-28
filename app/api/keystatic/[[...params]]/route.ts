@@ -1,4 +1,5 @@
 import { makeRouteHandler } from '@keystatic/next/route-handler';
+import { NextResponse } from 'next/server';
 import config from '../../../../keystatic.config';
 
 const { GET, POST: keystatic_POST } = makeRouteHandler({
@@ -8,22 +9,29 @@ const { GET, POST: keystatic_POST } = makeRouteHandler({
 
 async function POST(request: Request) {
   const url = new URL(request.url);
-  const response = await keystatic_POST(request);
 
   if (url.pathname === '/api/keystatic/github/logout') {
-    const isProduction = process.env.NODE_ENV === 'production';
-    const cookieValue = `admin_auth_session=; Path=/; Max-Age=0; HttpOnly; SameSite=Lax${isProduction ? '; Secure' : ''}`;
+    const keystatic_response = await keystatic_POST(request);
+    const location = keystatic_response.headers.get('Location') ?? '/keystatic';
 
-    const newResponse = new Response(response.body, {
-      status: response.status,
-      statusText: response.statusText,
-      headers: response.headers,
+    const response = NextResponse.redirect(new URL(location, request.url), {
+      status: keystatic_response.status,
     });
-    newResponse.headers.append('Set-Cookie', cookieValue);
-    return newResponse;
+
+    // Copy Keystatic's own Set-Cookie headers (clears GitHub OAuth token)
+    keystatic_response.headers.forEach((value, key) => {
+      if (key.toLowerCase() === 'set-cookie') {
+        response.headers.append('Set-Cookie', value);
+      }
+    });
+
+    // Delete our iron-session cookie
+    response.cookies.delete('admin_auth_session');
+
+    return response;
   }
 
-  return response;
+  return keystatic_POST(request);
 }
 
 export { GET, POST };
