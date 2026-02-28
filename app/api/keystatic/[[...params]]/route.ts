@@ -2,23 +2,23 @@ import { makeRouteHandler } from '@keystatic/next/route-handler';
 import { NextResponse } from 'next/server';
 import config from '../../../../keystatic.config';
 
-const { GET, POST: keystatic_POST } = makeRouteHandler({
+const { GET: keystatic_GET, POST } = makeRouteHandler({
   config,
   localBaseDirectory: process.cwd(),
 });
 
-async function POST(request: Request) {
+async function GET(request: Request) {
   const url = new URL(request.url);
 
   if (url.pathname === '/api/keystatic/github/logout') {
-    const keystatic_response = await keystatic_POST(request);
+    const keystatic_response = await keystatic_GET(request);
     const location = keystatic_response.headers.get('Location') ?? '/keystatic';
 
     const response = NextResponse.redirect(new URL(location, request.url), {
       status: keystatic_response.status,
     });
 
-    // Copy Keystatic's own Set-Cookie headers (clears GitHub OAuth token)
+    // Copy Keystatic's own Set-Cookie headers (clears GitHub OAuth tokens)
     keystatic_response.headers.forEach((value, key) => {
       if (key.toLowerCase() === 'set-cookie') {
         response.headers.append('Set-Cookie', value);
@@ -31,7 +31,7 @@ async function POST(request: Request) {
     return response;
   }
 
-  return keystatic_POST(request);
+  return keystatic_GET(request);
 }
 
 export { GET, POST };
