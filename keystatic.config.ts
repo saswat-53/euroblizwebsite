@@ -28,9 +28,12 @@ export default config({
         quote_en: fields.document({
           label: 'Quote (English)',
           formatting: {
-            bold: true,
-            italic: true,
-            underline: true,
+            headingLevels: [1, 2, 3],
+            inlineMarks: {
+              bold: true,
+              italic: true,
+              underline: true,
+            },
           },
           links: true,
         }),
@@ -42,9 +45,12 @@ export default config({
         quote_fr: fields.document({
           label: 'Quote (French)',
           formatting: {
-            bold: true,
-            italic: true,
-            underline: true,
+            headingLevels: [1, 2, 3],
+            inlineMarks: {
+              bold: true,
+              italic: true,
+              underline: true,
+            },
           },
           links: true,
         }),
@@ -79,9 +85,11 @@ export default config({
           description: 'Main blog content in English',
           formatting: {
             headingLevels: [1, 2, 3],
-            bold: true,
-            italic: true,
-            underline: true,
+            inlineMarks: {
+              bold: true,
+              italic: true,
+              underline: true,
+            },
           },
           links: true,
         }),
@@ -98,9 +106,11 @@ export default config({
           description: 'Main blog content in French',
           formatting: {
             headingLevels: [1, 2, 3],
-            bold: true,
-            italic: true,
-            underline: true,
+            inlineMarks: {
+              bold: true,
+              italic: true,
+              underline: true,
+            },
           },
           links: true,
         }),
