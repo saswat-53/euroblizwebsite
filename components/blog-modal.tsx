@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react"
 import { X } from "lucide-react"
 import Image from "next/image"
+import { DocumentRenderer } from "@keystatic/core/renderer"
 
 interface BlogModalProps {
     isOpen: boolean
@@ -14,7 +15,7 @@ interface BlogModalProps {
         date: string
         readTime: string
         excerpt: string
-        content: string
+        content: Parameters<typeof DocumentRenderer>[0]["document"] | null
     }
 }
 
@@ -35,22 +36,6 @@ export function BlogModal({ isOpen, onClose, blog }: BlogModalProps) {
     }, [isOpen])
 
     if (!isOpen) return null
-
-    // Render text content with preserved line breaks
-    const renderContent = () => {
-        if (!blog.content) {
-            return <p className="text-muted-foreground">No content available.</p>
-        }
-
-        // Split by paragraphs (double newlines) and render each as a paragraph
-        const paragraphs = blog.content.split('\n\n').filter((p: string) => p.trim())
-
-        return paragraphs.map((paragraph: string, index: number) => (
-            <p key={index} className="mb-4">
-                {paragraph.trim()}
-            </p>
-        ))
-    }
 
     const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
         if (e.target === e.currentTarget) {
@@ -109,7 +94,10 @@ export function BlogModal({ isOpen, onClose, blog }: BlogModalProps) {
                             prose-pre:bg-muted prose-pre:border prose-pre:border-border
                             prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-4 prose-blockquote:italic
                         ">
-                            {renderContent()}
+                            {blog.content
+                                ? <DocumentRenderer document={blog.content} />
+                                : <p className="text-muted-foreground">No content available.</p>
+                            }
                         </div>
                     </div>
                 </div>

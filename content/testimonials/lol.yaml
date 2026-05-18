@@ -1,6 +1,12 @@
 name: lol
-quote_en: jhfujf
+quote_en:
+  - type: paragraph
+    children:
+      - text: jhfujf
 position_en: jtdgyjrdjy
-quote_fr: kjghdfytdyt
+quote_fr:
+  - type: paragraph
+    children:
+      - text: kjghdfytdyt
 position_fr: tdytdytd
 rating: 5

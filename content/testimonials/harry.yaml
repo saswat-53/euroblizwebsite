@@ -1,6 +1,12 @@
 name: harry
-quote_en: this has to work
+quote_en:
+  - type: paragraph
+    children:
+      - text: this has to work
 position_en: manager
-quote_fr: sdfad
+quote_fr:
+  - type: paragraph
+    children:
+      - text: sdfad
 position_fr: asdasdas
 rating: 3
