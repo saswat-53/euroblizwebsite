@@ -26,25 +26,29 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
 
   // Fetch testimonials from Keystatic
   const testimonialsData = await reader.collections.testimonials.all()
-  const testimonials = testimonialsData.map((testimonial) => ({
+  const testimonials = await Promise.all(testimonialsData.map(async (testimonial) => ({
     slug: testimonial.slug,
     name: testimonial.entry.name,
-    quote: locale === 'en' ? testimonial.entry.quote_en : testimonial.entry.quote_fr,
+    quote: locale === 'en'
+      ? await testimonial.entry.quote_en()
+      : await testimonial.entry.quote_fr(),
     position: locale === 'en' ? testimonial.entry.position_en : testimonial.entry.position_fr,
     rating: testimonial.entry.rating,
-  }))
+  })))
 
   // Fetch blog posts from Keystatic
   const postsData = await reader.collections.posts.all()
-  const posts = postsData.map((post) => ({
+  const posts = await Promise.all(postsData.map(async (post) => ({
     slug: post.slug,
     title: locale === 'en' ? post.entry.title_en : post.entry.title_fr,
     excerpt: locale === 'en' ? post.entry.excerpt_en : post.entry.excerpt_fr,
-    content: locale === 'en' ? post.entry.content_en : post.entry.content_fr,
+    content: locale === 'en'
+      ? await post.entry.content_en()
+      : await post.entry.content_fr(),
     image: post.entry.image,
     date: post.entry.date,
     readTime: post.entry.readTime,
-  }))
+  })))
 
   return (
     <main>

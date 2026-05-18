@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react"
 import { X } from "lucide-react"
 import Image from "next/image"
-import { DocumentRenderer } from "@keystatic/core/renderer"
+import { DocumentNodes } from "@/lib/document-renderer"
 
 interface BlogModalProps {
     isOpen: boolean
@@ -15,7 +15,7 @@ interface BlogModalProps {
         date: string
         readTime: string
         excerpt: string
-        content: Parameters<typeof DocumentRenderer>[0]["document"] | null
+        content: Parameters<typeof DocumentNodes>[0]["document"] | null
     }
 }
 
@@ -95,7 +95,7 @@ export function BlogModal({ isOpen, onClose, blog }: BlogModalProps) {
                             prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-4 prose-blockquote:italic
                         ">
                             {blog.content
-                                ? <DocumentRenderer document={blog.content} />
+                                ? <DocumentNodes document={blog.content} />
                                 : <p className="text-muted-foreground">No content available.</p>
                             }
                         </div>
