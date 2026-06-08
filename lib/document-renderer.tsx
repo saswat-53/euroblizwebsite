@@ -38,8 +38,11 @@ function renderInline(node: InlineNode, key: number): React.ReactNode {
     return el
   }
   if (node.type === "link") {
+    const href = /^(https?:|mailto:|tel:|\/\/)/i.test(node.href)
+      ? node.href
+      : `https://${node.href}`
     return (
-      <a key={key} href={node.href} target="_blank" rel="noopener noreferrer">
+      <a key={key} href={href} target="_blank" rel="noopener noreferrer">
         {node.children.map(renderInline)}
       </a>
     )
